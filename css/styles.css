@@ -1,0 +1,160 @@
+/*------------fonts------------*/
+
+/*------------main------------*/
+body{
+	font: 16px 'Arial';
+	color: #000;
+	background: url(../images/bg.png);
+}
+
+.wrapper{
+	max-width: 1100px;
+	margin: 0 auto;
+	background: #fff;
+	border: 1px solid #87CEFA;
+	border-radius: 5px;
+}
+
+/*------------clearfix------------*/
+.clearfix::before, .clearfix::after {
+    content:"";
+    display:table;
+}
+.clearfix::after {
+    clear:both;
+}
+.clearfix{
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*------------header------------*/
+#header img{
+	width: 100%;
+}
+
+/*------------navigation------------*/
+.navigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navigation ul li{
+	float: left;
+	padding: 10px 5px;
+}
+
+.navigation ul li + li{
+	margin-left: 20px;
+}
+
+.navigation ul li a{
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.navigation ul li a:hover{
+	color: #87CEFA;
+}
+/*------------content------------*/
+.content .title{
+	font-family: 'Georgia';
+	text-align: center;
+}
+
+/*------------offers------------*/
+.offers{
+	text-align: center;
+}
+
+.offers .offersItem{
+	display: inline-block;
+	width: 250px;
+}
+
+.offers .offersItem + .offersItem{
+	margin-left: 20px;
+}
+
+.offers .offersItem .offersItemInfo{
+	text-align: center;
+}
+
+.offers .offersItem .offersItemInfo h3{
+	margin: 0;
+}
+
+.offers .offersItem .offersItemInfo p{
+	margin: 0;
+	font-style: italic;
+	font-size: 12px;
+}
+
+/*------------who we are------------*/
+.whoWeAre p{
+	padding: 0 50px;
+	margin: 0 0 10px 0;
+	line-height: 1.4;
+}
+
+.whoWeAre img{
+	width: 100%;
+}
+
+/*------------footer------------*/
+#footer{
+	padding: 0 10px;
+}
+
+#footer p{
+	float: left;
+	font-size: 14px;
+	font-style: italic;
+	width: 60%;
+}
+
+#footer .socIcons{
+	float: right;
+	margin-top: 6px;
+}
+
+#footer .socIcons img{
+	width: 30px;
+	height: 30px;
+}
+
+/*------------media------------*/
+@media only screen and (max-device-width: 816px){
+	.offers .offersItem:nth-of-type(3){
+		margin: 20px 0 0 0;
+	}
+}
+@media only screen and (max-device-width: 542px){
+	.offers .offersItem:nth-of-type(2){
+		margin: 20px 0 0 0;
+	}
+}
+
+@media only screen and (max-device-width: 500px){
+	.navigation ul li{
+		float: none;
+		text-align: center;
+	}
+
+	.navigation ul li + li{
+		margin: 0;
+	}
+}
+
+@media only screen and (max-device-width: 450px){
+	#footer p {
+		font-size: 11px;
+	}
+}
+
+@media only screen and (max-device-width: 400px){
+	.whoWeAre p{
+		font-size: 14px;
+	}
+}
